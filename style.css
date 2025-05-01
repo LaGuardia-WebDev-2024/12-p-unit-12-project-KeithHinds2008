@@ -1,14 +1,153 @@
-@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Delius&family=Poetsen+One&display=swap");
-
+body,
 html {
-  background-color: white;
-  padding-left: 20px;
+  height: 100%;
 }
 
-img{
+#back {
+  background-image: url("https://cdn.glitch.global/d03d2377-54bd-4c0f-afd1-81effb05b730/DLNY-6162.jpg?v=1744213238658");
+}
+
+#dlny {
+  
+  background-image: url("https://cdn.glitch.global/d03d2377-54bd-4c0f-afd1-81effb05b730/DLNY-5418.jpg?v=1744300299797")
+  
+}
+
+
+
+
+.parallax {
+  /* The image used */
+  /*   background-image: url("https://cdn.glitch.global/d03d2377-54bd-4c0f-afd1-81effb05b730/DLNY-6162.jpg?v=1744213238658"); */
+
+  /* Full height */
+  height: 110%;
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  /*   background-attachment: fixed; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.head {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: -150px;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+img {
+  border: 30px;
+  border-radius: 8px;
+}
+
+body {
+  background-image: url("https://cdn.glitch.global/d03d2377-54bd-4c0f-afd1-81effb05b730/DLNY-6162.jpg?v=1744213238658");
+  height: 110%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.head li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.head li {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+}
+
+li :hover {
+  background-color: black;
   border-radius: 30px;
 }
 
+#res {
+  color: #beb9b3;
+}
+
+.bio {
+  color: white;
+}
+
+.heading {
+  color: white !important;
+}
+
+#dance {
+  color: white;
+}
+#email {
+  color: white;
+}
+
+a:hover {
+  background-color: none;
+  color: grey;
+}
+
+h3 {
+  color: #beb9b3;
+}
+
+#chanel {
+  background-color: none;
+  text-align: right;
+  margin-right: 0%;
+}
+
+a {
+  font-size: 18px;
+  margin: 8px;
+}
+
+#move {
+  background-color: none;
+  text-align: left;
+}
+
+#top {
+  display: flex;
+  justify-content: space-between;
+}
+
+#picquo {
+  display: flex;
+  justify-content: space-between;
+}
+
+#size {
+  font-size: 40px;
+}
+
+.side {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ins {
+  font-size: 25px;
+}
+
 h1 {
-  font-family: "Poetsen One", sans-serif;
+  font-family: "Gideon Roman", serif;
+  font-weight: 400;
+  font-size: 45px;
+}
+
+.side2 {
+  width: 50%;
 }
