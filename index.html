@@ -1,63 +1,204 @@
-<!-- Unit 12 Project
-Requirements
-[  ] $() Select by Element, ID AND Class 
-[  ] Use Three Different jQuery Methods 
-[  ] Add Five CSS Declarations
-[  ] Include Three Images
-
-Select ONE Additional 
-[ no ] Feature 1 - Use .addClass() method
-[ no ] Feature 2 - Use a variable in javaScript 
-[ no ] Feature 3 - Use .mouseover() method
-[ no ] Feature 4 - Use .show() method
-[ no ] Feature 5 - Use .append() method
--->
-
-
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>Unit 12 Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+       html {
+        height: 100%;
+      }
+      .parallax {
+        /* The image used */
+        background-image: url("https://cdn.glitch.global/d03d2377-54bd-4c0f-afd1-81effb05b730/DLNY-6272.jpg?v=1746546524055");
+
+        /* Full height */
+        height: 110%;
+        width: 100%;
+
+        /* Create the parallax scrolling effect */
+        /*   background-attachment: fixed; */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .head {
+        list-style-type: none;
+        margin: 0;
+        margin-bottom: -150px;
+        padding: 0;
+        overflow: hidden;
+        background-color: transparent;
+      }
+
+      img {
+        border: 30px;
+        border-radius: 8px;
+      }
+
+      body {
+        background-image: url("https://cdn.glitch.global/d03d2377-54bd-4c0f-afd1-81effb05b730/DLNY-6272.jpg?v=1746546524055");
+        height: 120%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .head li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .head li {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        float: left;
+      }
+
+      li :hover {
+        background-color: black;
+      }
+
+      #res {
+        color: #beb9b3;
+      }
+
+      .bio {
+        color: white;
+      }
+
+      .heading {
+        color: white !important;
+      }
+
+      #dance {
+        color: white;
+      }
+      #email {
+        color: white;
+      }
+
+      a:hover {
+        background-color: none;
+        color: grey;
+      }
+
+      h3 {
+        color: #beb9b3;
+      }
+
+      #chanel {
+        background-color: none;
+        text-align: right;
+        margin-right: 0%;
+      }
+
+      a {
+        font-size: 18px;
+        margin: 8px;
+      }
+
+      #move {
+        background-color: none;
+        text-align: left;
+      }
+
+      #top {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #picquo {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #size {
+        font-size: 40px;
+      }
+
+      .side {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .ins {
+        font-size: 25px;
+      }
+
+      h1 {
+        font-family: "Gideon Roman", serif;
+        font-weight: 400;
+        font-size: 45px;
+      }
+
+      .side2 {
+        width: 50%;
+      } 
+       
+      
+    </style>
   </head>
   <body>
-    <button id="mem1-button">Memory #1</button>
-    <button id="mem2-button">Memory #2</button>
-    <button id="mem3-button">Memory #3</button>
-    <h1>My Top 3 Memories of <span>This Year</span></h1>
-    <ol>
-      <li>
-        <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
+     <ul class="head">
+    <li style="float: left"><h1 >Keith-Allen Hinds</h1></li>
+      <li style="float: right">
+        <a
+          target="_blank"
+          href="https://www.instagram.com/keith_hinds_43889/profilecard/?igsh=MWI1NXVzNTJkanV0Nw="
+        >
+          <img
+            class="ani"
+            src="https://cdn.glitch.global/d03d2377-54bd-4c0f-afd1-81effb05b730/0973c889-3580-4033-b9bd-abfe9b7da1aa.image.png?v=1735836652443"
+            width="25"
+          />
+        </a>
+      </li>
+      <li style="float: right">
+        <a
+          target="_blank"
+          href="https://youtube.com/@keithhinds1913?si=Icno7YENb0QFQpVW"
+        >
+          <img
+            class="ani"
+            src="https://cdn.glitch.global/d03d2377-54bd-4c0f-afd1-81effb05b730/5f8df92e-76ec-4956-8f12-629f7679a2b8.image.png?v=1735836749140"
+            width="25"
+          />
+        </a>
+      </li>
+      <li style="float: right">
+        <a
+          target="_blank"
+          href="https://cdn.glitch.global/d03d2377-54bd-4c0f-afd1-81effb05b730/5f8df92e-76ec-4956-8f12-629f7679a2b8.image.png?v=1735836749140
+"
+        >
+          <img
+            class="ani"
+            src="https://cdn.glitch.global/d03d2377-54bd-4c0f-afd1-81effb05b730/3d55feb6-d640-471d-8f83-dae1be1f2a0a.image.png?v=1735836786387"
+            width="25"
+          />
+        </a>
       </li>
 
-      <li>
-        <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
+      <li  style="float: right"><a href="contact.html">Contact</a></li>
+
+      <li  style="float: right" ><a href="choreo.html">Choreography</a></li>
+      <li  style="float: right"><a href="#Media">Media</a></li>
+      <li  style="float: right">
+        <a href="https://docs.google.com/document/d/16MYVdqUXM6GKA33pXF27tlnYMOmTKmIBZMfzlYQnHtw/edit?usp=sharing"
+          >Resume</a>
       </li>
+      <li  style="float: right"><a href="aboutme.html" class="ani">About</a></li>
+      <li  style="float: right"><a href="index.html">Home</a></li>
 
-      <li>
-        <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
-      </li>
-    </ol>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script>
-      $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
-      });
-
-      $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
-      });
-
-      $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
-      });
-    </script>
+    </ul>
   </body>
 </html>
-
-<!--- Taken From Khan Academy HTML/JS: Making webpages interactive with jQuery-->
