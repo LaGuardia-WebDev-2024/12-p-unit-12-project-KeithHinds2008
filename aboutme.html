@@ -4,7 +4,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="style.css" rel="stylesheet" type="text/css" />
 <style>
-
 </style>
 </head>
 <body>
@@ -61,17 +60,21 @@
 
 <div class="parallax" id="back"></div>
 
-<div class="side" style="height:2500px;background-color:black;font-size:14px;color:white;">
+<div class="side" style="height:800px;background-color:black;font-size:14px;color:white;">
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <div id="move" style="width:750px;">
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <h2 id="size">
           The creative process is not controlled
           <br />by a switch you can simply turn on or off; <br />
           it's with you all the time. -Alvin Ailey
         </h2>
       </div>
-<div class="side2">
-    <h3 id="me">About Me</h3>
+<div class="side2"> 
+  <br><br><br>
+  
+    <h1 id="me">About Me</h1>
 
     <p>
      Keith-Allen is a talented and dynamic performer with a passion for various types of dance, including Contemporary, Jazz, Ballet, Modern, Vogue, Tap, Hip-Hop, and more. He is especially passionate about choreography, with five years of experience captivating audiences through the fluidity, dynamics, and emotional depth of both his dancing and choreographic work.
@@ -82,7 +85,7 @@
     <br />
     Keith is currently training at Fiorello H. LaGuardia High School and is in his second year as a Young Professional at <strong>MOVE|NYC|</strong>. He has also trained at prestigious institutions such as Alvin Ailey, Ballet Hispánico, and most recently The Juilliard School. Throughout his journey, Keith has studied under renowned teachers, including:
 <ul>
-      <li id="sh">Shay Bland</li>
+      <li class="sh">Shay Bland</li>
       <li id="gr">Greg Lau</li>
       <li>Genessy Castillo</li>
       <li>Milton Myers</li>
@@ -112,10 +115,11 @@ Outside of performing, Keith enjoys strength training, attending performances, a
   </div> 
   </div> 
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-      $("#me").mouseover(function () {
-        $("#me").css("color", "purple");
+      $("li").mouseover(function () {
+        $("li").css("color", "purple");
       });
 
      
@@ -126,16 +130,18 @@ Outside of performing, Keith enjoys strength training, attending performances, a
         
       });
       
-       $("#sh").mouseover(function () {
-        $("#sh").css("color", "purple");
-          $("#sh").html("her <strong> choreography </strong> is phenomenal");
+       $(".sh").mouseover(function () {
+        $(".sh").css("color", "purple");
+          $(".sh").html("her <strong> choreography </strong> is phenomenal");
          
       });
       
       
       
     </script>
-  
+   
+      
+
   
   
 </body>
